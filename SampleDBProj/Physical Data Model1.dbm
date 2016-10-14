@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<xmi:XMI xmlns:datamodelversion="http://www.ibm.com/com.ibm.datatools.core/model/data/1.8.0.0" xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DB2Model="http:///com/ibm/db/models/db2/db2.ecore" xmlns:LUW="http:///com/ibm/db/models/db2/luw.ecore" xmlns:SQLAccessControl="http:///org/eclipse/datatools/modelbase/sql/accesscontrol.ecore" xmlns:SQLDataTypes="http:///org/eclipse/datatools/modelbase/sql/datatypes.ecore">
+  <LUW:LUWDatabase xmi:id="_Tz2GoFSDEeazqd4Hz1yxdA" name="SAMPLE" vendor="DB2 UDB" version="V10.1" schemas="_T3AvYFSDEeazqd4Hz1yxdA" authorizationIds="_T3CkkFSDEeazqd4Hz1yxdA" federated="true">
+    <eAnnotations xmi:id="_Tz2GoVSDEeazqd4Hz1yxdA" source="ConnectionURI">
+      <details xmi:id="_Tz2GolSDEeazqd4Hz1yxdA" key="ConnectionKey" value="SAMPLE"/>
+    </eAnnotations>
+  </LUW:LUWDatabase>
+  <DB2Model:DB2Schema xmi:id="_T3AvYFSDEeazqd4Hz1yxdA" name="DEMO" tables="_T3BWcFSDEeazqd4Hz1yxdA" database="_Tz2GoFSDEeazqd4Hz1yxdA" owner="_T3CkkFSDEeazqd4Hz1yxdA"/>
+  <LUW:LUWTable xmi:id="_T3BWcFSDEeazqd4Hz1yxdA" name="MEMBER" schema="_T3AvYFSDEeazqd4Hz1yxdA" partitionMode=" ">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_T3BWcVSDEeazqd4Hz1yxdA" name="POLICYNUM">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_T3BWclSDEeazqd4Hz1yxdA" name="CHAR" length="8"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_T3BWc1SDEeazqd4Hz1yxdA" name="POLICYTYPE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_T3BWdFSDEeazqd4Hz1yxdA" name="CHAR" length="4"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_T3BWdVSDEeazqd4Hz1yxdA" name="FIRSTNAME" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_T3BWdlSDEeazqd4Hz1yxdA" name="CHAR" length="16"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_T3BWd1SDEeazqd4Hz1yxdA" name="LASTNAME" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_T3BWeFSDEeazqd4Hz1yxdA" name="CHAR" length="16"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_T3BWeVSDEeazqd4Hz1yxdA" name="STREETNUM" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_T3BWelSDEeazqd4Hz1yxdA" name="CHAR" length="4"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_T3BWe1SDEeazqd4Hz1yxdA" name="STREETNAME" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_T3BWfFSDEeazqd4Hz1yxdA" name="CHAR" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_T3BWfVSDEeazqd4Hz1yxdA" name="CITY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_T3BWflSDEeazqd4Hz1yxdA" name="CHAR" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_T3BWf1SDEeazqd4Hz1yxdA" name="PCODE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_T3BWgFSDEeazqd4Hz1yxdA" name="CHAR" length="4"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_T3BWgVSDEeazqd4Hz1yxdA" name="AGE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_T3BWglSDEeazqd4Hz1yxdA" name="CHAR" length="3"/>
+    </columns>
+  </LUW:LUWTable>
+  <SQLAccessControl:User xmi:id="_T3CkkFSDEeazqd4Hz1yxdA" name="DB2INST1" description="" ownedSchema="_T3AvYFSDEeazqd4Hz1yxdA" Database="_Tz2GoFSDEeazqd4Hz1yxdA"/>
+</xmi:XMI>

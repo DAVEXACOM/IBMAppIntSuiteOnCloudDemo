@@ -1,0 +1,58 @@
+!SESSION 2016-10-14 10:44:37.332 -----------------------------------------------
+eclipse.buildId=4.2.2.M20140918-1444
+java.fullversion=JRE 1.7.0 IBM J9 2.7 Windows 7 amd64-64 Compressed References 20160406_298393 (JIT enabled, AOT enabled)
+J9VM - R27_Java727_SR3_20160406_0942_B298393
+JIT  - tr.r13.java_20160328_114186
+GC   - R27_Java727_SR3_20160406_0942_B298393_CMPRSS
+J9CL - 20160406_298393
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_AU
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide tools_auto -showlocation -product com.ibm.etools.msgbroker.tooling.ide
+Command-line arguments:  -data C:\Users\IBM_ADMIN\IBM\IIBT10\IBMAppIntSuiteOnCloudDemo -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide tools_auto -showlocation -product com.ibm.etools.msgbroker.tooling.ide
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-10-14 10:44:38.866
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY org.eclipse.ui 2 2 2016-10-14 10:44:41.296
+!MESSAGE Invalid preference category path: com.ibm.importer.preferences (bundle: com.ibm.adapter.c, page: com.ibm.adapter.c.ui.preferencepage.CPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2016-10-14 10:44:41.299
+!MESSAGE Invalid preference category path: com.ibm.debug.breakpoints.common.pref.tracepoint (bundle: com.ibm.debug.wsa, page: com.ibm.debug.wsa.WSATracepointPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2016-10-14 10:44:41.300
+!MESSAGE Invalid preference category path: com.ibm.importer.preferences (bundle: com.ibm.etools.cobol.preference.ui, page: com.ibm.etools.cobol.preference.ui.preferencepage.CobolPreferencePage)
+
+!ENTRY org.eclipse.osgi 2 1 2016-10-14 10:44:42.334
+!MESSAGE NLS missing message: overrideSavedTrustStorePasswordDialogTitle in: com.ibm.etools.mft.broker.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2016-10-14 10:44:42.334
+!MESSAGE NLS missing message: overrideSavedTrustStorePasswordDialogDescription in: com.ibm.etools.mft.broker.runtime.messages
+
+!ENTRY com.ibm.mq.runtime 1 0 2016-10-14 10:44:44.582
+!MESSAGE 
+
+!ENTRY com.ibm.mq.runtime 1 0 2016-10-14 10:44:44.582
+!MESSAGE C:\Program Files\IBM\IIB\10.0.0.5\tools>mqsifindmqpath
+
+!ENTRY com.ibm.mq.runtime 1 0 2016-10-14 10:44:44.937
+!MESSAGE BIP8071I: Successful command completion. C:\Program Files (x86)\IBM\WebSphere MQ
+
+!ENTRY com.ibm.mq.runtime 1 0 2016-10-14 10:44:44.937
+!MESSAGE MQ Install location found:C:/Program Files (x86)/IBM/WebSphere MQ
+
+!ENTRY com.ibm.mq.runtime 1 0 2016-10-14 10:44:44.937
+!MESSAGE 
+
+!ENTRY com.ibm.etools.mft.pattern.community 4 0 2016-10-14 10:45:05.460
+!MESSAGE Connection error occurred : Connection timed out: connect
+
+!ENTRY org.eclipse.osgi 2 1 2016-10-14 10:45:30.942
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorSchemaInAppImportSchemaInSharedLib in: com.ibm.etools.msg.builder.messages
+
+!ENTRY org.eclipse.osgi 2 1 2016-10-14 10:45:30.943
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorProjectReferenceIsMissing in: com.ibm.etools.msg.builder.messages
+
+!ENTRY org.eclipse.osgi 2 1 2016-10-14 10:46:52.795
+!MESSAGE NLS unused message: SendMessage_msgNameLabel in: com.ibm.etools.mft.testmode.TestModeStrings
+
+!ENTRY org.eclipse.osgi 2 1 2016-10-14 10:46:52.796
+!MESSAGE NLS missing message: SendLastMessageAction_label in: com.ibm.etools.mft.testmode.TestModeStrings

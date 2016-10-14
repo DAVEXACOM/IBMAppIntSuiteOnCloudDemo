@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><MessageBroker name="CICStoGoogle_IIBtoAppConnectApplicationInterface">
+  <XSDCollection href="platform:/resource/CICStoGoogle_IIBtoAppConnectApplicationInterface/Event.xsd" prefix="" targetNamespace="">
+    <element href="platform:/resource/CICStoGoogle_IIBtoAppConnectApplicationInterface/Event.xsd#//Event;XSDElementDeclaration" name="Event" type="mlib://CICStoGoogle_IIBtoAppConnectApplicationInterface#/-/complexType{}EventType"/>
+    <complexType baseType="mlib://CICStoGoogle_IIBtoAppConnectApplicationInterface#/-/complexType{http://www.w3.org/2001/XMLSchema}anyType" href="platform:/resource/CICStoGoogle_IIBtoAppConnectApplicationInterface/Event.xsd#//EventType;XSDComplexTypeDefinition" name="EventType"/>
+  </XSDCollection>
+</MessageBroker>

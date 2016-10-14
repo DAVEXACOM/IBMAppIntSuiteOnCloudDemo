@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ComIbmDatabase.msgnode="ComIbmDatabase.msgnode" xmlns:ComIbmFlowOrder.msgnode="ComIbmFlowOrder.msgnode" xmlns:ComIbmMQInput.msgnode="ComIbmMQInput.msgnode" xmlns:ComIbmMSLMapping.msgnode="ComIbmMSLMapping.msgnode" xmlns:com_ibm_webhook_subflows_WebhookOutput.subflow="com/ibm/webhook/subflows/WebhookOutput.subflow" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:eflow="http://www.ibm.com/wbi/2005/eflow" xmlns:utility="http://www.ibm.com/wbi/2005/eflow_utility"
+    nsURI="CICSMQSyncToStore.msgflow" nsPrefix="CICSMQSyncToStore.msgflow">
+  <eClassifiers xmi:type="eflow:FCMComposite" name="FCMComposite_1">
+    <eSuperTypes href="http://www.ibm.com/wbi/2005/eflow#//FCMBlock"/>
+    <translation xmi:type="utility:TranslatableString" key="CICSMQSyncToStore" bundleName="CICSMQSyncToStore" pluginId="CICSMemberToDBStore"/>
+    <colorGraphic16 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/CICSMemberToDBStore/icons/full/obj16/CICSMQSyncToStore.gif"/>
+    <colorGraphic32 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/CICSMemberToDBStore/icons/full/obj30/CICSMQSyncToStore.gif"/>
+    <composition>
+      <nodes xmi:type="ComIbmMQInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="43,91" queueName="CICS.MEMBER.OUT" connection="CLIENT" destinationQueueManagerName="IIB1" queueManagerHostname="192.168.179.197" listenerPortNumber="11414" channelName="CLIENTCONN" messageDomainProperty="DFDL" messageSetProperty="{memberModel}" messageTypeProperty="{}:MEMBER" policyUrl="/apiv1/policy/MQEndpoint/MQ1">
+        <translation xmi:type="utility:ConstantString" string="CICS.MEMBER.OUT"/>
+      </nodes>
+      <nodes xmi:type="ComIbmMSLMapping.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_5" location="433,145" mappingExpression="msl://{default}#CICSMQSyncToStore_MapToEvent">
+        <translation xmi:type="utility:ConstantString" string="MapToEvent"/>
+      </nodes>
+      <nodes xmi:type="ComIbmFlowOrder.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_3" location="231,91">
+        <translation xmi:type="utility:ConstantString" string="Order Operations"/>
+      </nodes>
+      <nodes xmi:type="ComIbmDatabase.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_7" location="427,59" dataSource="SAMPLE" statement="esql://routine/#CICSMQSyncToStore_Database.Main">
+        <translation xmi:type="utility:ConstantString" string="Insert Into Database"/>
+      </nodes>
+      <nodes xmi:type="com_ibm_webhook_subflows_WebhookOutput.subflow:FCMComposite_1" xmi:id="FCMComposite_1_2" location="620,149">
+        <translation xmi:type="utility:ConstantString" string="WebhookOutput1"/>
+      </nodes>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_6" targetNode="FCMComposite_1_3" sourceNode="FCMComposite_1_1" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_8" targetNode="FCMComposite_1_5" sourceNode="FCMComposite_1_3" sourceTerminalName="OutTerminal.second" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_1" targetNode="FCMComposite_1_7" sourceNode="FCMComposite_1_3" sourceTerminalName="OutTerminal.first" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_2" targetNode="FCMComposite_1_2" sourceNode="FCMComposite_1_5" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.Input"/>
+    </composition>
+    <propertyOrganizer/>
+    <stickyBoard/>
+  </eClassifiers>
+</ecore:EPackage>
